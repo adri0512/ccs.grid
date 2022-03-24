@@ -1,0 +1,22 @@
+.grid{
+    display:grid; /*para que tengas esos estilos al div*/
+  
+   grid-template-columns: repeat(3,1fr); /*el numero de vecs que se va a repetir, en este caso 6 veces*/
+   grid-auto-rows: minmax(100px, auto); /*el auto-rows nos  indica que aplicara para tood el tamaño*/
+   gap: 1em; /*el espaciado que tendra */
+   /*para alinear 2 tipos*/
+   /*justify-items: center;de manera vertical y aling horizontal*/
+   align-items: stretch; 
+  
+}
+.element1 {
+    grid-column: 1/3;/*le damos indicaciones cuanto abarcara por ejemplo sera de la caja 1 que abarque hasta la 3*/
+}
+.grid > div {
+    background: #ecf0f1; /* ponerle fondo de la caja de texto*/
+    padding: 1em; /* el grosor que tendra*/
+}
+.grid > div:hover {
+    border:1px solid #f1c40f;  /*darle borde con pixeles y que sera de color amarillo */
+}
+
